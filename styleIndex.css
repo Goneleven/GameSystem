@@ -1,0 +1,505 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    max-width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+    background: #222831;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100%;
+}
+
+#bodyIndex {
+    background: no-repeat center/cover url(!imagens/Fudn\ olegal.png);
+
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand h1 {
+    color: blue;
+}
+
+.brand span {
+    color: orange;
+}
+
+.menuContainer {
+    margin-left: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.first a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.first a:hover {
+    color: rgb(110, 110, 255);
+}
+
+.second button {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+}
+
+.second .sign {
+    color: white;
+}
+
+.second button:first-child {
+    background-color: transparent;
+}
+
+.second button:last-child {
+    border-radius: 10%;
+    transition: 0.2s;
+}
+
+.second button:last-child:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.burgerContainer {
+    display: none;
+}
+
+/* body{
+    background: rgb(255, 241, 164);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.ham {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    /* transform: scale(6); */
+}
+
+.ham:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.bur {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ger {
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(109, 109, 109);
+    transition: 0.5 ease-in-out;
+}
+
+.q {
+    transform-origin: 0 0;
+}
+
+.e {
+    transform-origin: 0 100%;
+}
+
+.q.a {
+    transform: rotate(46.5deg) translate(0, -2px);
+    width: 28px;
+}
+
+.w.b {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.e.c {
+    transform: rotate(-45deg) translate(0.5px, 1.5px);
+    width: 28px;
+}
+
+
+
+
+
+.box1 {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.box1 img {
+    margin-left: -18%;
+}
+
+.box1 a:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    border-radius : 5px;
+    z-index: 1;
+}
+
+.box1 a:hover{
+    transform: scale(1.25, 1.25);
+    z-index: 10;
+}
+
+.box1 a{
+    transition: 0.2s ease-in-out;
+}
+
+.box1 a:hover::after{
+    opacity: 1;
+}
+
+
+
+.card1 {
+    height: 400px;
+    width: 200px;
+    padding: 20px 35px;
+    background: #1c3144;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 1;
+}
+
+.card1 h3 {
+    color: rebeccapurple;
+    font-size: 25px;
+}
+
+.card1 button {
+    background-color: #ed2793;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    /* box-shadow: 5px 5px 50px white; */
+    border-radius: 40px;
+    cursor: pointer;
+
+}
+
+.card1 a {
+    text-decoration: none;
+}
+
+#jogo1 {
+    background: no-repeat center/cover url(!imagens/cardBackground1.png);
+}
+
+#jogo2 {
+    background: no-repeat center/cover url(!imagens/cardBackground2.png);
+}
+
+#jogo3 {
+    background: no-repeat center/cover url(!imagens/cardBackground3.png);
+}
+
+#jogo4 {
+    background: no-repeat center/cover url(!imagens/cardBackground4.png);
+}
+
+#jogo5 {
+    background: no-repeat center/cover url(!imagens/cardBackground5.png);
+}
+
+.botao1 {
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.sackboy {
+    position: absolute;
+    z-index: 1;
+    /* margin-right: 25%; */
+    margin-top: 158px;
+}
+
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #fff;
+    background-color: #011c39;
+}
+
+.footer>* {
+    flex: 1 100%;
+}
+
+.footerLeft {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footerLeft img {
+    width: 35%;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footerRight {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footerRight>* {
+    float: 1 50%;
+    margin-right: 1.25em;
+}
+
+.boxF a {
+    color: #999;
+}
+
+.footerBottom {
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+}
+
+.footerLeft p {
+    padding-right: 20%;
+    color: #999;
+}
+
+.socials a {
+    /* background: no-repeat center/cover url(!imagens/instagram.png); */
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socials a i {
+    color: #e7f2f4;
+    padding: 10px 12px;
+    font-size: 20px;
+}
+
+.socials .fa-instagram {
+    background: no-repeat center/cover url(!imagens/instagram.png);
+}
+
+@media screen and(min-width: 600px) {
+    .footerRight>* {
+        flex: 1;
+    }
+
+    .footerLeft {
+        flex: 1 0px;
+    }
+
+    .footerRight {
+        flex: 2 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 15px;
+    }
+
+    /* main {
+        font-size: 55px;
+    } */
+
+    .sackboy {
+        position: absolute;
+        z-index: 1;
+        /* margin-right: 25%; */
+        margin-top: 238px;
+    }
+
+    .sackboy img {
+        width: 45%;
+    }
+
+    .hollowKnight {
+        position: absolute;
+        z-index: 1;
+        /* margin-right: 25%; */
+        margin-top: 230px;
+        margin-left: 40px;
+    }
+
+    .hollowKnight img {
+        width: 100%;
+    }
+
+    .second .sign {
+        color: black;
+    }
+}
+
+
+
+@media(max-width:992px) {
+    .first a {
+        font-size: 0.8rem;
+        color: white;
+    }
+
+    .second button:last-child {
+        background: rgb(99, 99, 255);
+        color: white;
+    }
+
+    .second button:last-child:hover {
+        color: black;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        background: #f7f7f7;
+        z-index: -5;
+    }
+
+    header {
+        grid-template-columns: 4fr 0.5fr;
+        box-shadow: o 10px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .brand {
+        justify-content: flex-start;
+        padding-left: 12%;
+        z-index: 2;
+    }
+
+    .burgerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuContainer {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 30px 0 30px 0;
+        box-sizing: border-box;
+        background: #ffffff;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        z-index: -1;
+        transition: 0.3s;
+        transform: translate(0, -250px);
+    }
+
+    .menuContainer.show {
+        transform: translate(0, 29%);
+        z-index: 1;
+    }
+
+    .first,
+    .second {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .first a {
+        font-size: 0.8rem;
+        color: black;
+    }
+
+    .second .sign {
+        color: black;
+    }
+
+    .box1 {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .card1 {
+        height: 400px;
+        width: 200px;
+        padding: 20px 35px;
+        background: #1c3144;
+        border-radius: 20px;
+        margin: 20px;
+        overflow: hidden;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        z-index: 5;
+    }
+}

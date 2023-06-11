@@ -1,0 +1,142 @@
+#mainPers {
+    background: no-repeat center/cover url(../imagens/background.jpg);
+
+}
+
+.conversa {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+}
+
+.conversa p {
+    font-size: 20px;
+}
+
+.containerPers {
+    width: 100%;
+    height: 10%;
+    position: static;
+    top: 0;
+    left: 0;
+    display: flex;
+
+}
+
+.elementoPers {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+    text-align: center;
+}
+
+.containerPers2 {
+    margin-top: 8%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+
+}
+
+.elementoPers2 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imagem {
+    padding-top: 10px;
+}
+
+#fieldsetPers {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 2.5px solid black;
+    color: white;
+}
+
+.botao {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+}
+
+.elementoPers2 button:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.elementoPers2 button:hover {
+    transform: scale(1.25, 1.25);
+    z-index: 10;
+}
+
+.elementoPers2 button {
+    transition: 0.2s ease-in-out;
+}
+
+.elementoPers2 button:hover::after {
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+
+    #mainPers{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .conversa {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+
+    .containerPers {
+        width: 1px;
+        height: 1px;
+        position: static;
+        top: 0;
+        left: 0;
+        display: flex;
+        visibility: hidden;
+        position: relative;
+        overflow: hidden;
+    
+    }
+
+    .containerPers2 {
+        margin-top: 1px;
+        width: 1px;
+        position: absolute;
+        display: flex;
+        visibility: hidden;
+        position: relative;
+        overflow: hidden;
+    
+    }
+
+    #fieldsetPers {
+        width: 1px;
+        height: 1px;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        border: 0px solid black;
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    
+}

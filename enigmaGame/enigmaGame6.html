@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleGame.css">
+    <link rel="stylesheet" href="../styleIndex.css">
+    <title>Rejected Crow - EnigmaGame</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="brand">
+            <img src="../!imagens/logo_generic.png" width="45%" alt="">
+        </div>
+        <div class="menuContainer">
+            <div class="div first">
+                <a href="../index.html">Games</a>
+                <a href="https://chatfake-guilhermedearmazenamento.b4a.run/">Chat</a>
+            </div>
+
+            <div class="second">
+                <button class="sign">Entrar</button>
+                <button>Comece!</button>
+            </div>
+        </div>
+
+        <div class="burgerContainer" onclick="burgerclick()">
+            <div class="ham">
+                <div class="bur">
+                    <span class="ger q"></span>
+                    <span class="ger w"></span>
+                    <span class="ger e"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+
+
+
+
+
+    <!-- MAIN -->
+    <main id="mainGame5">
+        <div class="sumir">
+
+
+            <br>
+
+            <div class="lore16">
+                <h1>Souldie - Enigma</h1>
+
+                <br>
+
+                <p>Você conseguiu! Passou no Teste da Segunda Porta, mas antes que conseguisse comemorar, você escuta a
+                    voz, a voz da Terceira Porta, o Terceiro Sábio, Cyclo, ele então, Ecoa a Mensagem: <br>
+                    "<b>Souldie</b>... Alma do Soldado Morto... Salve este Reino, o Reino de Greay, mas saiba, você será
+                    a jaula desta Reliquia, Apenas entre no quarto da Reliquia, atrás do trono do Rei, e segure a
+                    Reliquia em suas mãos, Ela fará o resto,
+                    sendo assim, trazendo Paz, e retirando toda a maldição Causada, o Sol voltará a brilhar em nosso
+                    Reino, o Reino de Greay. <br>
+                    Mas não deixarei você sem escolhas, entre no quarto da Reliquia, e quebra-a, Condenando todos deste
+                    Reino, o Reino de Greay,
+                    a Escuridão Incessante, a Noite se tornará Eterna, Um reino Governado por monstros de Escuridão.
+                    <br>
+                    SoulDie, Você ja está Morto, Seu tumulo, está no começo destas Ruinas, você era o nosso Melhor
+                    Espadachim, jurou
+                    proteger este Reino, mas não iremos mudar o que está Destinado a ser, Escolha o seu Caminho, Nós, os
+                    3 Sábios, pedimos... <br><br>
+                    <b>Traga Paz Para o Reino de Greay.</b>
+
+
+                </p>
+            </div>
+            <div class="lore17">
+
+                <input type="image" src="imagens/rip.png" class="btnEscolha" alt="Submit" onclick="pers1()" />
+
+            </div>
+
+            <div class="lore18">
+                <a href="enigmaGameFinal1.html">
+                    <button class="enviarResp">Destruir a Relíquia</button>
+                </a>
+
+                <a href="enigmaGameFinal2.html">
+                    <button class="enviarResp">Selar a Relíquia</button>
+                </a>
+            </div>
+
+
+            <br><br><br><br><br><br><br>
+        </div>
+    </main>
+
+    <!-- MAIN -->
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footerLeft">
+            <img src="../!imagens/logo_generic.png">
+            <p>Oi! O Projeto <b>Afraid Frog</b> é Feito por Guilherme Bonifácio, Irei tentar trazer o máximo de diversão
+                para o público. <br> <b>Afraid Frog</b> é, e sempre será o mundo da imaginação e Criatividade, seja
+                livre! E aproveite os Jogos.</p>
+        </div>
+        <ul class="footerRight">
+            <li>
+                <h2>Games</h2>
+
+                <ul class="boxF">
+                    <li><a href="../JogoDaVelha/velhaGame.html">Jogo Da Velha</a></li>
+                    <li><a href="../forca/forcaGame.html">Jogo Da Forca</a></li>
+                    <li><a href="../jogoDePalavras/palavrasGame.html">Jogo Das Palavras</a></li>
+                    <li><a href="../jogoDoPers/personagemGame.html">Jogo Do Personagem</a></li>
+                    <li><a href="../enigmaGame/enigmaGame.html">SoulDie</a></li>
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                </ul>
+            </li>
+
+            <li class="features">
+                <h2>Links</h2>
+
+                <ul class="boxF">
+                    <li><a href="https://github.com/BoneShai">GitHub</a></li>
+                    <!-- <li><a href="https://hollowknightsilksong.com">Site Legal</a></li> -->
+                    <!-- <li><a href="#">A A A</a></li>
+                    <li><a href="#">A A A</a></li>
+                    <li><a href="#">A A A</a></li> -->
+                </ul>
+            </li>
+
+            <li>
+                <h2>Local</h2>
+
+                <ul class="boxF">
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Mogi Das Cruzes</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footerBottom">
+            <p>Todos os Direitos Reservador por &copy;afraidfrog 2023</p>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+</body>
+<script defer>
+    function pers1() {
+        var img = document.getElementById("img")
+        var imagem = document.getElementById("imagem")
+        if (img.style.display == "none") { //verifica se a imagem está sendo exibida, se não estiver vai executar os comandos abaixo e se tiver vai executar o else
+            img.style.display = "block" //exibe a imagem
+            imagem.innerHTML = "CLIQUE DE NOVO" //altera o texto
+        }
+        else { //se a imagem estiver sendo exibida vai executar os comandos abaixo
+            img.style.display = "none"; //oculta a imagem
+            imagem.innerHTML = "CLIQUE AQUI" //altera o texto
+        }
+    }
+
+</script>
+<script src="../scriptIndex.js"></script>
+
+</html>

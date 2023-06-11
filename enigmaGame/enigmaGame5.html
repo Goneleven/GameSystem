@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleGame.css">
+    <link rel="stylesheet" href="../styleIndex.css">
+    <title>Rejected Crow - EnigmaGame</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="brand">
+            <img src="../!imagens/logo_generic.png" width="45%" alt="">
+        </div>
+        <div class="menuContainer">
+            <div class="div first">
+                <a href="../index.html">Games</a>
+                <a href="https://chatfake-guilhermedearmazenamento.b4a.run/">Chat</a>
+            </div>
+
+            <div class="second">
+                <button class="sign">Entrar</button>
+                <button>Comece!</button>
+            </div>
+        </div>
+
+        <div class="burgerContainer" onclick="burgerclick()">
+            <div class="ham">
+                <div class="bur">
+                    <span class="ger q"></span>
+                    <span class="ger w"></span>
+                    <span class="ger e"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+
+
+
+
+
+    <!-- MAIN -->
+    <main id="mainGame3">
+        <div class="sumir">
+
+
+            <br><br>
+
+            <div class="lore7">
+                <h1>Souldie - Enigma</h1>
+
+                <br>
+
+                <p>Você passa pela porta, e encontra a Segunda Porta, e novamente, os olhos de escuridão te observam
+                    fixamente e profundamente,
+                    a Porta ecoa a Mensagem: "Alma solta... chegou até aqui para
+                    Selar a Reliquia e Trazer a Luz e a Paz para este reino novamente? Ou apenas transformar este mundo
+                    para sempre? <br>
+                    Independente de sua escolha famigerada, deverá provar que é Digno de chegar na sala do Trono,
+                    Descubra a Ordem e será
+                    Digno de sua escolha."
+                </p> <br>
+                <div class="botoesResposta">
+                    <button onclick="hint()" class="dicas">Dica</button>
+                </div>
+            </div>
+            <div class="lore8">
+                <img src="imagens/pillarNumber.png" width="40%">
+            </div>
+
+            <div class="lore9">
+                <form class="botaoResposta">
+                    <input type="text" name="resp" id="resp" class="resps" placeholder=". . . ">
+                    <br>
+                    <input type="submit" id="send" value="Continuar" class="enviarResp">
+
+                </form>
+            </div>
+
+
+            <br><br><br><br><br><br><br>
+        </div>
+    </main>
+
+    <!-- MAIN -->
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footerLeft">
+            <img src="../!imagens/logo_generic.png">
+            <p>Oi! O Projeto <b>Afraid Frog</b> é Feito por Guilherme Bonifácio, Irei tentar trazer o máximo de diversão
+                para o público. <br> <b>Afraid Frog</b> é, e sempre será o mundo da imaginação e Criatividade, seja
+                livre! E aproveite os Jogos.</p>
+        </div>
+        <ul class="footerRight">
+            <li>
+                <h2>Games</h2>
+
+                <ul class="boxF">
+                    <li><a href="../JogoDaVelha/velhaGame.html">Jogo Da Velha</a></li>
+                    <li><a href="../forca/forcaGame.html">Jogo Da Forca</a></li>
+                    <li><a href="../jogoDePalavras/palavrasGame.html">Jogo Das Palavras</a></li>
+                    <li><a href="../jogoDoPers/personagemGame.html">Jogo Do Personagem</a></li>
+                    <li><a href="../enigmaGame/enigmaGame.html">SoulDie</a></li>
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                </ul>
+            </li>
+
+            <li class="features">
+                <h2>Links</h2>
+
+                <ul class="boxF">
+                    <li><a href="https://github.com/BoneShai">GitHub</a></li>
+                    <!-- <li><a href="https://hollowknightsilksong.com">Site Legal</a></li> -->
+                    <!-- <li><a href="#">A A A</a></li>
+                    <li><a href="#">A A A</a></li>
+                    <li><a href="#">A A A</a></li> -->
+                </ul>
+            </li>
+
+            <li>
+                <h2>Local</h2>
+
+                <ul class="boxF">
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Mogi Das Cruzes</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footerBottom">
+            <p>Todos os Direitos Reservador por &copy;afraidfrog 2023</p>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+</body>
+<script defer>
+    const btn = document.querySelector("#send");
+
+    btn.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        const resp = document.querySelector("#resp");
+
+        const value = resp.value;
+
+
+        if (value == "mpsv") {
+            window.location.href = "enigmaGame6.html"
+        } else {
+            alert("''Lamento... Volte quando estiver Apto''")
+        }
+    })
+
+    function hint() {
+        alert("Me pergunto... Será que devo ver a diferença entre a letra de cima e a letra de baixo? E continuar esta sequencia?   ")
+    }
+
+</script>
+<script src="../scriptIndex.js"></script>
+
+</html>

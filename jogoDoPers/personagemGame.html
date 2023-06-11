@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylePers.css">
+    <link rel="stylesheet" href="../styleIndex.css">
+    <title>Rejected Crow - Quem é Você?</title>
+</head>
+
+<body onload="recomeca()" id="bodyVelha">
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="brand">
+            <img src="../!imagens/logo_generic.png" width="45%" alt="">
+        </div>
+        <div class="menuContainer">
+            <div class="div first">
+                <a href="../index.html">Games</a>
+                <a href="https://chatfake-guilhermedearmazenamento.b4a.run/">Chat</a>
+            </div>
+
+            <div class="second">
+                <button class="sign">Entrar</button>
+                <button>Comece!</button>
+            </div>
+        </div>
+
+        <div class="burgerContainer" onclick="burgerclick()">
+            <div class="ham">
+                <div class="bur">
+                    <span class="ger q"></span>
+                    <span class="ger w"></span>
+                    <span class="ger e"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main id="mainPers">
+
+        <div class="conversa">
+            <br>
+            <h1>Vendedor de Personalidades:</h1>
+            <br>
+            <p>Você não é jovem demais para estar aqui? Não irei vender coisas perigosas para você, mas posso te
+                entregar
+                a foto de um personagem e você finge ser ele, ta legal pra você? ÓTIMO! Escolha um:
+            </p>
+        </div>
+
+        <div class="containerPers">
+            <div class="elementoPers">
+                <fieldset id="fieldsetPers">
+                    <!-- PESSOAS: -->
+                    <div id="nome"> </div>
+                    <div id="vendedor"> </div>
+                    <div id="imagem"></div>
+                </fieldset>
+            </div>
+        </div>
+
+
+        <div class="containerPers2">
+            <div class="elementoPers2">
+                <button onclick="carregarConteudo1()" class="botao">Korok</button>
+                <button onclick="carregarConteudo2()" class="botao">Sans</button>
+                <button onclick="carregarConteudo3()" class="botao">Conker</button>
+                <button onclick="carregarConteudo4()" class="botao">Club Penguin</button>
+                <button onclick="carregarConteudo5()" class="botao">Tails</button>
+                <br>
+                <button onclick="window.location.reload()" class="botao">Atualizar</button>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </main>
+    <!-- MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footerLeft">
+            <img src="../!imagens/logo_generic.png">
+            <p>Oi! O Projeto <b>Afraid Frog</b> é Feito por Guilherme Bonifácio, Irei tentar trazer o máximo de diversão
+                para o público. <br> <b>Afraid Frog</b> é, e sempre será o mundo da imaginação e Criatividade, seja
+                livre! E aproveite os Jogos.</p>
+        </div>
+        <ul class="footerRight">
+            <li>
+                <h2>Games</h2>
+
+                <ul class="boxF">
+                    <li><a href="../JogoDaVelha/velhaGame.html">Jogo Da Velha</a></li>
+                    <li><a href="../forca/forcaGame.html">Jogo Da Forca</a></li>
+                    <li><a href="../jogoDePalavras/palavrasGame.html">Jogo Das Palavras</a></li>
+                    <li><a href="../jogoDoPers/personagemGame.html">Jogo Do Personagem</a></li>
+                    <li><a href="../enigmaGame/enigmaGame.html">SoulDie</a></li>
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                </ul>
+            </li>
+
+            <li class="features">
+                <h2>Links</h2>
+
+                <ul class="boxF">
+                    <li><a href="https://github.com/BoneShai">GitHub</a></li>
+                    <!-- <li><a href="https://hollowknightsilksong.com">Site Legal</a></li> -->
+                    <!-- <li><a href="#">A A A</a></li>
+                    <li><a href="#">A A A</a></li>
+                    <li><a href="#">A A A</a></li> -->
+                </ul>
+            </li>
+
+            <li>
+                <h2>Local</h2>
+
+                <ul class="boxF">
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Mogi Das Cruzes</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footerBottom">
+            <p>Todos os Direitos Reservador por &copy;afraidfrog 2023</p>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+    <script src="javaScript/scriptPers.js"></script>
+    <script src="../scriptIndex.js"></script>

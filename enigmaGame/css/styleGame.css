@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.resps{
+    border: 0px;
+    background: none;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    color: white;
+}
+
+.dicas {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.botoesResposta button:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.botoesResposta button:hover {
+    transform: scale(1.25, 1.25);
+    z-index: 10;
+}
+
+.botoesResposta button {
+    transition: 0.2s ease-in-out;
+}
+
+.botoesResposta button:hover::after {
+    opacity: 1;
+}
+
+
+.enviarResp {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.botaoResposta .enviarResp:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.botaoResposta .enviarResp:hover {
+    transform: scale(1.25, 1.25);
+    z-index: 10;
+}
+
+.botaoResposta .enviarResp {
+    transition: 0.2s ease-in-out;
+}
+
+.botaoResposta .enviarResp:hover::after {
+    opacity: 1;
+}
+
+/* Diferente */
+
+.lore12 .enviarResp:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.lore12 .enviarResp:hover {
+    transform: scale(1.25, 1.25);
+    z-index: 10;
+}
+
+.lore12 .enviarResp {
+    transition: 0.2s ease-in-out;
+}
+
+.lore12 .enviarResp:hover::after {
+    opacity: 1;
+}
+
+/* Diferente 2 */
+
+.lore18 .enviarResp:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.lore18 .enviarResp:hover {
+    transform: scale(1.25, 1.25);
+    z-index: 10;
+}
+
+.lore18 .enviarResp {
+    transition: 0.2s ease-in-out;
+}
+
+.lore18 .enviarResp:hover::after {
+    opacity: 1;
+}
+
+#mainGame {
+    background: no-repeat center/cover url(../imagens/background1.jpg);
+    color: white;
+
+}
+
+#mainGame2 {
+    background: no-repeat center/cover url(../imagens/background2.jpg);
+    color: white;
+
+}
+
+#mainGame3 {
+    background: no-repeat center/cover url(../imagens/background4.jpg);
+    color: white;
+
+}
+
+#mainGame4 {
+    background: no-repeat center/cover url(../imagens/background4.jpg);
+    color: white;
+
+}
+
+#mainGame5 {
+    background: no-repeat center/cover url(../imagens/background5.jpg);
+    color: white;
+
+}
+
+#mainGameFinal1 {
+    background: no-repeat center/cover url(../imagens/backgroundFinal1.jpg);
+    color: white;
+
+}
+
+#mainGameFinal2 {
+    background: no-repeat center/cover url(../imagens/backgroundFinal2.jpg);
+    color: white;
+
+}
+
+.lore1 {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore2 {
+    width: 30%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore3 {
+    margin-top: 3%;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* PARTE 2 */
+
+.lore4 {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore5 {
+    width: 50%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore6 {
+    margin-top: 1%;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* PARTE 3 */
+
+.lore7 {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore8 {
+    width: 50%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore9 {
+    margin-top: 1%;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* PARTE 4 */
+
+.lore10 {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore11 {
+    width: 50%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore12 {
+    margin-top: 3%;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* PARTE 5 */
+
+
+
+/* PARTE 6 */
+
+.lore16 {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore17 {
+    width: 50%;
+    margin-top: 1.5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lore18 {
+    margin-top: 1.5%;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+iframe {
+    visibility: hidden;
+}
+
+.btnEscolha {
+    width: 10%;
+}
+
+
+@media (max-width: 800px) {
+
+    .lore1 {
+        width: 1px;
+        visibility: hidden;
+    }
+
+    .lore2 {
+        width: 1px;
+        visibility: hidden;
+    }
+
+    .lore3 {
+        width: 1px;
+        visibility: hidden;
+    }
+
+    .sumir {
+        position: relative;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+}

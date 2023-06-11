@@ -1,0 +1,173 @@
+body{
+    background-color: #006969;
+}
+
+#mainVelha {
+    background: no-repeat center/cover url(../image/background.png);
+    background-position-y: 10%;
+
+}
+
+#tudoVelha{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#resultadoVelha{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#resultado{
+    margin-top: 1%;
+    color: black;
+
+}
+
+#jogo{
+    width: 603px;
+    height: 603px;
+    border: solid 3px;
+    display: inline-block;
+    background-color: white;
+}
+
+#resultado{
+    margin-left: 30px;
+    position: relative;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+#resposta p{
+    font-size: 30;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+.linha{
+    height: 200px;
+    border-bottom: solid 1px;
+}
+
+.casa{
+    width: 200px;
+    height: 100%;
+    border-right: solid 1px;
+    float: left;
+}
+
+.xis{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+}
+
+.bola{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+}
+
+.velha{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: black;
+    background-image: linear-gradient(to bottom, #317bf3, #768696);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 40px;
+    text-decoration: none;
+    box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid black 1px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    background: #535353;
+    background-image: linear-gradient(to bottom, #1E62D0, #535d68);
+    text-decoration: none;
+}
+
+/* .footer{
+    margin-top: 10%;
+} */
+
+
+@media (max-width: 608px) {
+
+    #jogo{
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+
+    #resultado{
+        font-size: 0px;
+        visibility: hidden;
+    }
+
+    #resultado button{
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+
+    #resposta{
+        font-size: 0px;
+        visibility: hidden;
+        color: black;
+
+    }
+
+    .linha{
+        width: 0px;
+        height: 0px;
+        border-bottom: 0px;
+        visibility: hidden;
+
+    }
+
+    .casa{
+        width: 0px;
+        height: 0px;
+        border-right: 0px;
+        visibility: hidden;
+
+    }
+
+    input[type=button], input[type=submit], input[type=reset] {
+        border-radius: 0px;
+        font-size: 0px;
+        font-weight: 0;
+        padding: 0px;
+        border: solid #337FED 0px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    #tudoVelha{
+        margin-top: 14%;
+    }
+
+    .menuContainer.show {
+        transform: translate(0, 29%);
+        z-index: 5;
+    }
+}

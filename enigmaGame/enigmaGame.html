@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleGame.css">
+    <link rel="stylesheet" href="../styleIndex.css">
+    <title>Rejected Crow - EnigmaGame</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="brand">
+            <img src="../!imagens/logo_generic.png" width="45%" alt="">
+        </div>
+        <div class="menuContainer">
+            <div class="div first">
+                <a href="../index.html">Games</a>
+                <a href="https://chatfake-guilhermedearmazenamento.b4a.run/">Chat</a>
+            </div>
+
+            <div class="second">
+                <button class="sign">Entrar</button>
+                <button>Comece!</button>
+            </div>
+        </div>
+
+        <div class="burgerContainer" onclick="burgerclick()">
+            <div class="ham">
+                <div class="bur">
+                    <span class="ger q"></span>
+                    <span class="ger w"></span>
+                    <span class="ger e"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+
+
+
+
+
+    <!-- MAIN -->
+    <main id="mainGame">
+        <div class="sumir">
+
+
+            <br><br>
+
+            <div class="lore1">
+                <h1>Souldie - Enigma</h1>
+
+                <br>
+
+                <p>Se sentindo perdido Souldie? Sim, este é você, indo explorar Ruinas em uma floresta perdida
+                    e esquecida pelos Sábios Corotear, Cyclo e Atanares, na entrada das rúinas, você se depara com algo
+                    que se parece uma barreira mágica . . . "Pronuncie as <b>Palavras</b> ditas Pelos humanos, para
+                    aqueles
+                    que ja
+                    se foram." <br> <br>
+                    (Todas as Respostas do Jogo DEVEM ser em minusculo)
+                </p>
+                <br>
+                <div class="botoesResposta">
+                    <button onclick="hint()" class="dicas">Dica</button>
+                </div>
+            </div>
+            <div class="lore2">
+                <img src="imagens/rip.png" width="30%">
+            </div>
+
+            <div class="lore3">
+                <form class="botaoResposta">
+                    <input type="text" name="resp1" id="resp1" class="resps" placeholder="Diga . . .">
+                    <br>
+                    <input type="submit" id="send1" value="Continuar" class="enviarResp">
+                </form>
+            </div>
+
+
+            <br><br><br><br><br><br><br>
+        </div>
+    </main>
+
+    <!-- MAIN -->
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footerLeft">
+            <img src="../!imagens/logo_generic.png">
+            <p>Oi! O Projeto <b>Afraid Frog</b> é Feito por Guilherme Bonifácio, Irei tentar trazer o máximo de diversão
+                para o público. <br> <b>Afraid Frog</b> é, e sempre será o mundo da imaginação e Criatividade, seja
+                livre! E aproveite os Jogos.</p>
+        </div>
+        <ul class="footerRight">
+            <li>
+                <h2>Games</h2>
+
+                <ul class="boxF">
+                    <li><a href="../JogoDaVelha/velhaGame.html">Jogo Da Velha</a></li>
+                    <li><a href="../forca/forcaGame.html">Jogo Da Forca</a></li>
+                    <li><a href="../jogoDePalavras/palavrasGame.html">Jogo Das Palavras</a></li>
+                    <li><a href="../jogoDoPers/personagemGame.html">Jogo Do Personagem</a></li>
+                    <li><a href="../enigmaGame/enigmaGame.html">SoulDie</a></li>
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                </ul>
+            </li>
+
+            <li class="features">
+                <h2>Links</h2>
+
+                <ul class="boxF">
+                    <li><a href="https://github.com/BoneShai">GitHub</a></li>
+                    <!-- <li><a href="https://hollowknightsilksong.com">Site Legal</a></li> -->
+                    <!-- <li><a href="#">A A A</a></li>
+                    <li><a href="#">A A A</a></li>
+                    <li><a href="#">A A A</a></li> -->
+                </ul>
+            </li>
+
+            <li>
+                <h2>Local</h2>
+
+                <ul class="boxF">
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                    <!-- <li><a href="#">Alguma Coisa Legal ou Não</a></li> -->
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Mogi Das Cruzes</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footerBottom">
+            <p>Todos os Direitos Reservador por &copy;afraidfrog 2023</p>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+</body>
+<script defer>
+
+    const btn = document.querySelector("#send1");
+
+    btn.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        const resp1 = document.querySelector("#resp1");
+
+        const value = resp1.value;
+
+
+        if (value == "descanse em paz") {
+            window.location.href = "enigmaGame2.html"
+        } else {
+            alert("Parece não ter acontecido nada...")
+        }
+    })
+
+    function hint() {
+        alert("Você olha para um Tumulo, está Escrito R.I.P, Essa sigla significa Alguma coisa?")
+    }
+
+</script>
+<script src="../scriptIndex.js"></script>
+
+</html>

@@ -1,0 +1,62 @@
+#mainPalavras {
+    background: no-repeat center/cover url('../imagens/background.png');
+    background-position-y: 10%;
+
+}
+
+.elemento button {
+
+    border-radius: 15px;
+    margin: 1em;
+    height: 50px;
+    width: 100px;
+
+    background: linear-gradient(to right, rgb(125, 90, 168), rgb(214, 199, 225), rgb(243, 238, 255));
+    background-size: 500% 100%;
+
+    animation-name: buttonBackground;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes buttonBackground {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding-top: 5%;
+}
+
+.elemento {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.palavras p, h1{
+    text-align: center;
+    color: white;
+}
+
+.palavras p{
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.palavras h1{
+    font-size: 50px;
+}
