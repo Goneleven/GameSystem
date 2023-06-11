@@ -59,6 +59,7 @@ body{
     height: 100%;
     border-right: solid 1px;
     float: left;
+    
 }
 
 .xis{
@@ -71,6 +72,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-weight: bold;
+
 }
 
 .velha{

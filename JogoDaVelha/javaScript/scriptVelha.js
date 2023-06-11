@@ -34,7 +34,7 @@ function verifica(casa) {
         //Se o jogador da vez for 1, coloca o desenho do xis
 
         if (vez == 1) {
-            document.getElementById("img" + casa).src = "image/x.png"
+            document.getElementById("img" + casa).src = "image/x.png";
 
             //Se o jogador for -1, coloca o desenho da bola
 
